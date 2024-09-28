@@ -1,11 +1,13 @@
 // import React from "react";
 // import { Link } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 import {Logo}  from "../../assets/img/image"
 
 function login() {
+  // const navigate = useNavigate();
   return (
-<div className="bg-white flex items-center justify-center min-h-screen">
-    <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+<div className="flex items-center justify-center min-h-screen bg-gray-100">
+    <div className="bg-white flex flex-col p-7 md:flex-row items-center justify-center w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
         <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
             <img src={Logo} alt="Supreme Secondary Learner Government logo" className="rounded-lg shadow-lg w-3/4 md:w-full" />
         </div>
@@ -20,7 +22,7 @@ function login() {
                     <label className="block text-gray-700 text-sm font-bold mb-2" name="password">Password</label>
                     <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter your Password here"/>
                     <p className="text-right text-gray-500 text-xs">
-                        <a href="#" className="hover:underline">Forgot your password?</a>
+                        <a href="/forgotPassword" className="hover:underline">Forgot your password?</a>
                     </p>
                 </div>
                 <div className="flex items-center justify-center">
