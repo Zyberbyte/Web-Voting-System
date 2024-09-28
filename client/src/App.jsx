@@ -7,17 +7,18 @@ import ForgotPassword from "./pages/Authentication/forgotPassword";
 
 function App() {
   return (
-    <Router>
+
       <div>
         <Routes>
-          <Route path="/" element={<Login />} />
-          <Route path="/forgotPassword" element={<ForgotPassword/>}/>
+          <Route index element={<Login />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/adminDashboard" element={<AdminDashboard />} />
           <Route path="/userDashboard" element={<UserDashboard />} />
           <Route path="/staffDashboard" element={<StaffDashboard />} />
         </Routes>
       </div>
-    </Router>
+  
   );
 }
 

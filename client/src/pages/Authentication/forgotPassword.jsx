@@ -1,4 +1,6 @@
 import { Logo } from "../../assets/img/image"
+import { Link } from 'react-router-dom';
+
 
 function forgotPassword() {
   return (
@@ -11,9 +13,10 @@ function forgotPassword() {
             src={Logo}
           />
         </div>
-        <div className="md:ml-8 md:mt-9 text-center md:text-left ">
+        <div className="md:ml-8 mt-6  text-center md:text-left ">
+        <h1 className="text-2xl text-center font-bold mb-8">Forgot Password</h1>
           <h2 className="text-gray-700 mb-4">
-            Forgot your password? Just let us know your email address and a password reset link will be sent to your email.
+             Just let us know your email address and a password reset link will be sent to your email.
           </h2>
           <form>
             <div className="mb-4">
@@ -37,7 +40,7 @@ function forgotPassword() {
           </form>
           <div className="mt-4">
             <a className="">
-              <p className="text-center">Go back to <a className="text-blue-600 hover:text-blue-900"  href="/">Sign In</a></p>
+              <p className="text-center">Go back to <Link to="/" className="text-blue-600 hover:text-blue-900">Sign In</Link></p>
             </a>
           </div>
         </div>
