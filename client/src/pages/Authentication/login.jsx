@@ -1,25 +1,35 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import { Logo, ProfileIcon } from "../../assets/img/image";
+// import React from "react";
+// import { Link } from "react-router-dom";
+import {Logo}  from "../../assets/img/image"
 
 function login() {
   return (
-    <>
-      <div className=" flex flex-col justify-center items-center h-[100vh] bg-yellow-300">
-        <div className="flex flex-col items-center justify-center w-[30%] bg-white border rounded-md">
-          <div className="flex flex-col items-center justify-center border-2  w-full h-full bg-gray-300 ">
-            <div className=" w-10 h-10">
-
-              <img src={ProfileIcon} alt="" />
-            </div>
-          </div>
-          <div className=" w-40 h-40 mb-5">
-            <img src={Logo} alt="logo" />
-          </div>
-          <div className="p-8 w-full"></div>
+<div className="bg-white flex items-center justify-center min-h-screen">
+    <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-3/4 lg:w-2/3 xl:w-1/2">
+        <div className="w-full md:w-1/2 flex justify-center mb-8 md:mb-0">
+            <img src={Logo} alt="Supreme Secondary Learner Government logo" className="rounded-lg shadow-lg w-3/4 md:w-full" />
         </div>
-      </div>
-    </>
+        <div className="w-full md:w-1/2 flex flex-col items-center">
+            <h1 className="text-3xl font-bold mb-8">Login</h1>
+            <form className="w-3/4">
+                <div className="mb-4">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" name="username">Username</label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="username" type="text" placeholder="Enter your Username here"/>
+                </div>
+                <div className="mb-6">
+                    <label className="block text-gray-700 text-sm font-bold mb-2" name="password">Password</label>
+                    <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 mb-3 leading-tight focus:outline-none focus:shadow-outline" id="password" type="password" placeholder="Enter your Password here"/>
+                    <p className="text-right text-gray-500 text-xs">
+                        <a href="#" className="hover:underline">Forgot your password?</a>
+                    </p>
+                </div>
+                <div className="flex items-center justify-center">
+                    <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline" type="button">Login</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
   );
 }
 
