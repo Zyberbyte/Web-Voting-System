@@ -20,13 +20,11 @@ function forgotPassword() {
           </h2>
           <form>
             <div className="mb-4">
-              <div className="flex items-center border border-gray-300 rounded-lg overflow-hidden">
-                <span className="px-3 text-gray-500">
-                  <i className="fas fa-envelope"></i>
-                </span>
+              <div className="flex  border border-gray-300 rounded-lg overflow-hidden">
+         
                 <input
                   className="w-full py-2 px-3 text-gray-700 focus:outline-none"
-                  placeholder="Email"
+                  placeholder="@Email"
                   type="email"
                 />
               </div>
@@ -34,8 +32,8 @@ function forgotPassword() {
             <button
               className="w-full bg-yellow-400 hover:bg-yellow-500 text-white py-2 rounded-lg"
               type="submit"
-            >
-              Reset Password
+            > 
+              Email Link
             </button>
           </form>
           <div className="mt-4">
